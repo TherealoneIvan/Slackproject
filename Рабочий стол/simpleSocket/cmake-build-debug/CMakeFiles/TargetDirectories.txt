@@ -1,3 +1,0 @@
-/home/iamivan/Рабочий стол/simpleSocket/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/iamivan/Рабочий стол/simpleSocket/cmake-build-debug/CMakeFiles/simple_socket.dir
-/home/iamivan/Рабочий стол/simpleSocket/cmake-build-debug/CMakeFiles/edit_cache.dir

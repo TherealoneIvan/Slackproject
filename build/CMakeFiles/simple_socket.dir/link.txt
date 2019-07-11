@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/simple_socket.dir/simple.cpp.o  -o simple_socket ../extern/poco/lib/libPocoJSON.a ../extern/poco/lib/libPocoNet.a ../extern/poco/lib/libPocoUtil.a ../extern/poco/lib/libPocoFoundation.a -lpthread 
