@@ -1,0 +1,3 @@
+/home/eldar/Desktop/simpleSocket/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/eldar/Desktop/simpleSocket/cmake-build-debug/CMakeFiles/simple_socket.dir
+/home/eldar/Desktop/simpleSocket/cmake-build-debug/CMakeFiles/edit_cache.dir
