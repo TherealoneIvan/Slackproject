@@ -1,0 +1,3634 @@
+Websocket URL: ws://localhost:9222/devtools/page/99560548D6BEE0C8371BDAAF4932FEDA
+/devtools/page/99560548D6BEE0C8371BDAAF4932FEDA PATH
+{
+  "id" : 1,
+  "result" : {
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17837}"
+    },
+    "timestamp" : 67131.000668
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17837}"
+    },
+    "timestamp" : 67131.039443
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17838}"
+    },
+    "timestamp" : 67132.102041
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17839}"
+    },
+    "timestamp" : 67141.000409
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17839}"
+    },
+    "timestamp" : 67141.038982
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17840}"
+    },
+    "timestamp" : 67151.000453
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17840}"
+    },
+    "timestamp" : 67151.044396
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17841}"
+    },
+    "timestamp" : 67152.107474
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17842}"
+    },
+    "timestamp" : 67161.000686
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17842}"
+    },
+    "timestamp" : 67161.041591
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17843}"
+    },
+    "timestamp" : 67171.000634
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17843}"
+    },
+    "timestamp" : 67171.039411
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17844}"
+    },
+    "timestamp" : 67172.121852
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"reconnect_url\",\"url\":\"wss:\/\/wss-primary.slack.com\/?bots_as_apps=1&dp=1&flannel=3&frt=Hf-FAwEBA2ZydAH_hgABAgEBUAEKAAEBUwEKAAAA_gH9_4YB_gHUNf-BAwEBA2ZycAH_ggABBQECUnUBDAABAlRpAQwAAQJFaQEMAAECVWkBDAABAk10Af-EAAAAEP-DBQEBBFRpbWUB_4QAAAD-AYr_ggH-AVx3c3M6Ly9jZXJiZXJ1cy1weHA0LmxiLnNsYWNrLW1zZ3MuY29tL3dlYnNvY2tldC9ET3lJbXdheWM5cm9QUFZxZ3FlWEtUOVlWOGhxOXFNdHExdGlTU2lGRVVGd2wyNV9WQ1UxekkyelhLQ2NMOWd4cXFtV1JSTTlpbzBPV1BtSUJoSDZtRzJ5aHp6b09GRDEwYTRqNEtkNnB4S2FqODFGaUJTeU0wVjJKOTdSMmQtUk1DdUd6NEdybzhKU1lyYWt4bXVpZ2dZQ3ptQzBLTjNlcjFYSVVZbGdmRkFFQ0dYa1YxLVlHQ21MVlQ0TXVNbVZ2Rm1oSFFWajFyX2dnX05RQnJiLTJQWlFHUkVYaXEweERMelpNclpTaE45bFVxY1dUcGRlN3FRVUFvSE5QSm8tTU05c2toVGdXQ1hseV91RUFaTmhJQnZjVDdjUkhWNDlYakxWcXV5NVZVcz0BCVRLVUM4UDFNRwIJVUw1QUxTOFNHAQ8BAAAADtS2tnklG15n_lwAASChEXMp-7MY-IGS5HXZeT7tuWXgG39MvgwVr00R8tG_OwA&token=xoxs-674416783730-685360892900-681210225489-92ea957342a79f83ca67820281c0b1426daa7379cc17b3a4aa1d907a6286f5ad\"}"
+    },
+    "timestamp" : 67177.137111
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17845}"
+    },
+    "timestamp" : 67181.000433
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17845}"
+    },
+    "timestamp" : 67181.038441
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17846}"
+    },
+    "timestamp" : 67191.000421
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17846}"
+    },
+    "timestamp" : 67191.042128
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17847}"
+    },
+    "timestamp" : 67192.124621
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17848}"
+    },
+    "timestamp" : 67201.000318
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17848}"
+    },
+    "timestamp" : 67201.039306
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17849}"
+    },
+    "timestamp" : 67211.000255
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17849}"
+    },
+    "timestamp" : 67211.038667
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17850}"
+    },
+    "timestamp" : 67212.146522
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17851}"
+    },
+    "timestamp" : 67221.00063
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17851}"
+    },
+    "timestamp" : 67221.039769
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17852}"
+    },
+    "timestamp" : 67231.000525
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17852}"
+    },
+    "timestamp" : 67231.042505
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17853}"
+    },
+    "timestamp" : 67232.167448
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17854}"
+    },
+    "timestamp" : 67241.000366
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17854}"
+    },
+    "timestamp" : 67241.03842
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17855}"
+    },
+    "timestamp" : 67251.000554
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17855}"
+    },
+    "timestamp" : 67251.040929
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17856}"
+    },
+    "timestamp" : 67252.171799
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17857}"
+    },
+    "timestamp" : 67261.000589
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17857}"
+    },
+    "timestamp" : 67261.040145
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17858}"
+    },
+    "timestamp" : 67271.000381
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17858}"
+    },
+    "timestamp" : 67271.039364
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17859}"
+    },
+    "timestamp" : 67272.180749
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17860}"
+    },
+    "timestamp" : 67281.000401
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17860}"
+    },
+    "timestamp" : 67281.039808
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17861}"
+    },
+    "timestamp" : 67291.000236
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17861}"
+    },
+    "timestamp" : 67291.038779
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17862}"
+    },
+    "timestamp" : 67292.199083
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"reconnect_url\",\"url\":\"wss:\/\/wss-primary.slack.com\/?bots_as_apps=1&dp=1&flannel=3&frt=Hf-FAwEBA2ZydAH_hgABAgEBUAEKAAEBUwEKAAAA_gH9_4YB_gHUNf-BAwEBA2ZycAH_ggABBQECUnUBDAABAlRpAQwAAQJFaQEMAAECVWkBDAABAk10Af-EAAAAEP-DBQEBBFRpbWUB_4QAAAD-AYr_ggH-AVx3c3M6Ly9jZXJiZXJ1cy1jZjY3LmxiLnNsYWNrLW1zZ3MuY29tL3dlYnNvY2tldC9jTmZHUDUxdFVIZC1SZ3d6Mk9Sd081ZmI5S09RUUUyMEZZOENGN2pxVUh3ankzRzZCZFBGaHZXWUtaTmo3QXhwRERQVEZHVm52RlhFZnFjSmJ4dUc1MWZhM0ZBZlp1eHI4RHAyNlhLbVFEb05EQWNLSWNyWlpFUVJjTnYwNWcxa3RSblhEMGlmTmI4NjVIQ2lGellCVkw3ekMzbUFqNkd1ck9RS2dsMnRjbWN6cHRFQlN0RXFJR1A5NjlDVGhwMDhzeVROV3NIS242bXRsaEFkcnRkWVVVdnczNUh1TmVNY0czb0o1QnUzekFxNXlZWDFiekhRakxBUlF4dGpYSk8tZUV1bm5kQlFadGoyQXNHMGlwVUFIZGE4NWZtSXdORWdxYXh6YXdJYXpGaz0BCVRLVUM4UDFNRwIJVUw1QUxTOFNHAQ8BAAAADtS2tvEvqwNs_lwAASBUeRKPyB57wk9HLI73odDiT-sX9n890V6VF6Bflfiv3gA&token=xoxs-674416783730-685360892900-681210225489-92ea957342a79f83ca67820281c0b1426daa7379cc17b3a4aa1d907a6286f5ad\"}"
+    },
+    "timestamp" : 67297.637103
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17863}"
+    },
+    "timestamp" : 67301.000422
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17863}"
+    },
+    "timestamp" : 67301.038818
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17864}"
+    },
+    "timestamp" : 67311.000268
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17864}"
+    },
+    "timestamp" : 67311.038876
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17865}"
+    },
+    "timestamp" : 67312.203225
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17866}"
+    },
+    "timestamp" : 67321.000268
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17866}"
+    },
+    "timestamp" : 67321.040383
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17867}"
+    },
+    "timestamp" : 67331.000453
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17867}"
+    },
+    "timestamp" : 67331.04103
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17868}"
+    },
+    "timestamp" : 67332.220315
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17869}"
+    },
+    "timestamp" : 67341.000469
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17869}"
+    },
+    "timestamp" : 67341.039403
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17870}"
+    },
+    "timestamp" : 67351.000249
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17870}"
+    },
+    "timestamp" : 67351.04984
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17871}"
+    },
+    "timestamp" : 67352.241544
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17872}"
+    },
+    "timestamp" : 67361.000277
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17872}"
+    },
+    "timestamp" : 67361.046371
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17873}"
+    },
+    "timestamp" : 67371.000314
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17873}"
+    },
+    "timestamp" : 67371.039964
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17874}"
+    },
+    "timestamp" : 67372.247647
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17875}"
+    },
+    "timestamp" : 67381.000356
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17875}"
+    },
+    "timestamp" : 67381.084272
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17876}"
+    },
+    "timestamp" : 67391.000272
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17876}"
+    },
+    "timestamp" : 67391.038135
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17877}"
+    },
+    "timestamp" : 67392.267177
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17878}"
+    },
+    "timestamp" : 67401.000354
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17878}"
+    },
+    "timestamp" : 67401.038896
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17879}"
+    },
+    "timestamp" : 67411.000466
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17879}"
+    },
+    "timestamp" : 67411.040195
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17880}"
+    },
+    "timestamp" : 67412.290012
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"reconnect_url\",\"url\":\"wss:\/\/wss-primary.slack.com\/?bots_as_apps=1&dp=1&flannel=3&frt=Hf-FAwEBA2ZydAH_hgABAgEBUAEKAAEBUwEKAAAA_gH9_4YB_gHUNf-BAwEBA2ZycAH_ggABBQECUnUBDAABAlRpAQwAAQJFaQEMAAECVWkBDAABAk10Af-EAAAAEP-DBQEBBFRpbWUB_4QAAAD-AYr_ggH-AVx3c3M6Ly9jZXJiZXJ1cy1qbHpyLmxiLnNsYWNrLW1zZ3MuY29tL3dlYnNvY2tldC8yMFdyTjFsaG1QRDlGejlJaG12R3RiMVV3SkFrX1ZQTnVuSWF1dzloS1NvMHAycG43aEdEQkIxNXdGMTlkSGNhQTdrOWF5Nlh1V2NndjJDbEZQMHVwblJ6OUtDazgwbVVycmthb2hsTTJUWDA4NU5lRFpVREZuUDlONHhGNktQUk4xSnNGTFJGeHh2UW4tSEUzdkRvM2RvTi1xOUVRa0ZtOVhFUmtxazU1Mm4zcE1PWEMwNDlXRTFJanFySDFjTndVN0tQLVN6X1dxWndvNXJMNTdKaUNIaExEWWdxdVFuc0hHWHlLaWRDN0JtazJ6N3RxaDV3N0NmQWJwVlNPVm5SM01sQU1aSW5PU3FFME91cmRIWV9KVkx1RGp1S29oM1hfVmlseWJXa2pTUT0BCVRLVUM4UDFNRwIJVUw1QUxTOFNHAQ8BAAAADtS2t2kasxMO_lwAASBu_bqoyY14sq4LuiAZ5clSNubQDv4KN9sSlMkHoLGwkAA&token=xoxs-674416783730-685360892900-681210225489-92ea957342a79f83ca67820281c0b1426daa7379cc17b3a4aa1d907a6286f5ad\"}"
+    },
+    "timestamp" : 67416.879484
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17881}"
+    },
+    "timestamp" : 67421.000298
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17881}"
+    },
+    "timestamp" : 67421.041078
+  }
+} -- JSON
+{
+  "method" : "Network.requestWillBeSent",
+  "params" : {
+    "documentURL" : "https:\/\/smthwentwrong.slack.com\/messages\/DL5QF4JDN\/",
+    "frameId" : "99560548D6BEE0C8371BDAAF4932FEDA",
+    "hasUserGesture" : false,
+    "initiator" : {
+      "stack" : {
+        "callFrames" : [
+          {
+            "columnNumber" : 1412673,
+            "functionName" : "e",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 1756038,
+            "functionName" : "e",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 986147,
+            "functionName" : "e",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 985874,
+            "functionName" : "e",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 985555,
+            "functionName" : "e",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 989634,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 3853370,
+            "functionName" : "A",
+            "lineNumber" : 0,
+            "scriptId" : "1030",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+          },
+          {
+            "columnNumber" : 3884498,
+            "functionName" : "E._resolveFromExecutor",
+            "lineNumber" : 0,
+            "scriptId" : "1030",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+          },
+          {
+            "columnNumber" : 3877722,
+            "functionName" : "E",
+            "lineNumber" : 0,
+            "scriptId" : "1030",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+          },
+          {
+            "columnNumber" : 989600,
+            "functionName" : "e",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 994394,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 1061500,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 803571,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 1061500,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 800058,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 1061500,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 1128539,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 1061500,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 799772,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 1061500,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 807185,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 1061500,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 1087388,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 1822169,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 1061500,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 1221951,
+            "functionName" : "e",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 168166,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 51332,
+            "functionName" : "c",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 1087372,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 1822169,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 1061500,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 1221951,
+            "functionName" : "e",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 639758,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 51332,
+            "functionName" : "c",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 1087372,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 1822169,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 1061500,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 1221951,
+            "functionName" : "e",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 641892,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 51332,
+            "functionName" : "c",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 1087372,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          },
+          {
+            "columnNumber" : 1822169,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 1061500,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 1221951,
+            "functionName" : "e",
+            "lineNumber" : 0,
+            "scriptId" : "1033",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+          },
+          {
+            "columnNumber" : 643201,
+            "functionName" : "",
+            "lineNumber" : 0,
+            "scriptId" : "1035",
+            "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+          }
+        ],
+        "parent" : {
+          "callFrames" : [
+            {
+              "columnNumber" : 643178,
+              "functionName" : "Cs",
+              "lineNumber" : 0,
+              "scriptId" : "1035",
+              "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+            },
+            {
+              "columnNumber" : 799592,
+              "functionName" : "",
+              "lineNumber" : 0,
+              "scriptId" : "1035",
+              "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+            },
+            {
+              "columnNumber" : 799357,
+              "functionName" : "",
+              "lineNumber" : 0,
+              "scriptId" : "1035",
+              "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+            },
+            {
+              "columnNumber" : 3913180,
+              "functionName" : "u",
+              "lineNumber" : 0,
+              "scriptId" : "1030",
+              "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+            },
+            {
+              "columnNumber" : 3884927,
+              "functionName" : "E._settlePromiseFromHandler",
+              "lineNumber" : 0,
+              "scriptId" : "1030",
+              "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+            },
+            {
+              "columnNumber" : 3885784,
+              "functionName" : "E._settlePromise",
+              "lineNumber" : 0,
+              "scriptId" : "1030",
+              "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+            },
+            {
+              "columnNumber" : 3886324,
+              "functionName" : "E._settlePromiseCtx",
+              "lineNumber" : 0,
+              "scriptId" : "1030",
+              "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+            },
+            {
+              "columnNumber" : 3840699,
+              "functionName" : "i._drainQueue",
+              "lineNumber" : 0,
+              "scriptId" : "1030",
+              "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+            },
+            {
+              "columnNumber" : 3840752,
+              "functionName" : "i._drainQueues",
+              "lineNumber" : 0,
+              "scriptId" : "1030",
+              "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+            },
+            {
+              "columnNumber" : 3838853,
+              "functionName" : "drainQueues",
+              "lineNumber" : 0,
+              "scriptId" : "1030",
+              "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+            }
+          ],
+          "description" : "setInterval",
+          "parent" : {
+            "callFrames" : [
+              {
+                "columnNumber" : 3901868,
+                "functionName" : "o",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 3840944,
+                "functionName" : "i._queueTick",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 3839874,
+                "functionName" : "u",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 3880777,
+                "functionName" : "E._then",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 3878552,
+                "functionName" : "E.then",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 799339,
+                "functionName" : "",
+                "lineNumber" : 0,
+                "scriptId" : "1035",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+              },
+              {
+                "columnNumber" : 1061500,
+                "functionName" : "",
+                "lineNumber" : 0,
+                "scriptId" : "1033",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+              },
+              {
+                "columnNumber" : 807185,
+                "functionName" : "",
+                "lineNumber" : 0,
+                "scriptId" : "1035",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+              },
+              {
+                "columnNumber" : 1061500,
+                "functionName" : "",
+                "lineNumber" : 0,
+                "scriptId" : "1033",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+              },
+              {
+                "columnNumber" : 1087388,
+                "functionName" : "",
+                "lineNumber" : 0,
+                "scriptId" : "1035",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+              },
+              {
+                "columnNumber" : 1822169,
+                "functionName" : "",
+                "lineNumber" : 0,
+                "scriptId" : "1033",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+              },
+              {
+                "columnNumber" : 1061500,
+                "functionName" : "",
+                "lineNumber" : 0,
+                "scriptId" : "1033",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+              },
+              {
+                "columnNumber" : 98905,
+                "functionName" : "t",
+                "lineNumber" : 0,
+                "scriptId" : "1038",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_ts.47b10843d6f006cc8eb4.min.js"
+              },
+              {
+                "columnNumber" : 868898,
+                "functionName" : "t",
+                "lineNumber" : 0,
+                "scriptId" : "1042",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-secondary_a_required.a8f08a195d3134b6c1a7.min.js"
+              },
+              {
+                "columnNumber" : 82117,
+                "functionName" : "e",
+                "lineNumber" : 0,
+                "scriptId" : "1038",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_ts.47b10843d6f006cc8eb4.min.js"
+              },
+              {
+                "columnNumber" : 30590,
+                "functionName" : "d",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 30911,
+                "functionName" : "u",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              }
+            ],
+            "description" : "Promise.then",
+            "parent" : {
+              "callFrames" : [
+                {
+                  "columnNumber" : 31130,
+                  "functionName" : "",
+                  "lineNumber" : 0,
+                  "scriptId" : "1030",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                },
+                {
+                  "columnNumber" : 28659,
+                  "functionName" : "i",
+                  "lineNumber" : 0,
+                  "scriptId" : "1030",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                },
+                {
+                  "columnNumber" : 29414,
+                  "functionName" : "fireWith",
+                  "lineNumber" : 0,
+                  "scriptId" : "1030",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                },
+                {
+                  "columnNumber" : 29449,
+                  "functionName" : "fire",
+                  "lineNumber" : 0,
+                  "scriptId" : "1030",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                },
+                {
+                  "columnNumber" : 28659,
+                  "functionName" : "i",
+                  "lineNumber" : 0,
+                  "scriptId" : "1030",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                },
+                {
+                  "columnNumber" : 29414,
+                  "functionName" : "fireWith",
+                  "lineNumber" : 0,
+                  "scriptId" : "1030",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                },
+                {
+                  "columnNumber" : 32551,
+                  "functionName" : "ready",
+                  "lineNumber" : 0,
+                  "scriptId" : "1030",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                },
+                {
+                  "columnNumber" : 32684,
+                  "functionName" : "G",
+                  "lineNumber" : 0,
+                  "scriptId" : "1030",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                }
+              ],
+              "description" : "setTimeout"
+            }
+          }
+        }
+      },
+      "type" : "script"
+    },
+    "loaderId" : "B4B0D33A279ED9981F745766A008895B",
+    "request" : {
+      "hasPostData" : true,
+      "headers" : {
+        "Content-Type" : "multipart\/form-data; boundary=----WebKitFormBoundaryAJa50dIkjpTRsX9C",
+        "Origin" : "https:\/\/smthwentwrong.slack.com",
+        "Sec-Metadata" : "destination=\"\", target=subresource, site=same-origin",
+        "User-Agent" : "Mozilla\/5.0 (X11; Linux x86_64; Linux Mint 19.1 Tessa tessa; MATE) AppleWebKit\/537.36 (KHTML, like Gecko) AtomShell\/3.4.2 Chrome\/69.0.3497.128 Electron\/4.2.1 Safari\/537.36 Slack_SSB\/3.4.2"
+      },
+      "initialPriority" : "High",
+      "method" : "POST",
+      "mixedContentType" : "none",
+      "postData" : "------WebKitFormBoundaryAJa50dIkjpTRsX9C\r\nContent-Disposition: form-data; name=\"version_ts\"\r\n\r\n1562629140\r\n------WebKitFormBoundaryAJa50dIkjpTRsX9C\r\nContent-Disposition: form-data; name=\"reason\"\r\n\r\npolling\r\n------WebKitFormBoundaryAJa50dIkjpTRsX9C\r\nContent-Disposition: form-data; name=\"token\"\r\n\r\nxoxs-674416783730-685360892900-681210225489-92ea957342a79f83ca67820281c0b1426daa7379cc17b3a4aa1d907a6286f5ad\r\n------WebKitFormBoundaryAJa50dIkjpTRsX9C\r\nContent-Disposition: form-data; name=\"_x_mode\"\r\n\r\nonline\r\n------WebKitFormBoundaryAJa50dIkjpTRsX9C--\r\n",
+      "referrerPolicy" : "no-referrer",
+      "url" : "https:\/\/smthwentwrong.slack.com\/api\/rtm.shouldReload?_x_id=e4bd64d5-1562689653.594&slack_route=TKUC8P1MG&_x_version_ts=1562629140"
+    },
+    "requestId" : "1000016789.129",
+    "timestamp" : 67429.012789,
+    "type" : "XHR",
+    "wallTime" : 1562689653.60195
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17882}"
+    },
+    "timestamp" : 67431.000408
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17882}"
+    },
+    "timestamp" : 67431.552869
+  }
+} -- JSON
+{
+  "method" : "Network.responseReceived",
+  "params" : {
+    "frameId" : "99560548D6BEE0C8371BDAAF4932FEDA",
+    "loaderId" : "B4B0D33A279ED9981F745766A008895B",
+    "requestId" : "1000016789.129",
+    "response" : {
+      "connectionId" : 718,
+      "connectionReused" : false,
+      "encodedDataLength" : 892,
+      "fromDiskCache" : false,
+      "fromServiceWorker" : false,
+      "headers" : {
+        "access-control-allow-headers" : "slack-route, x-slack-version-ts",
+        "access-control-allow-origin" : "*",
+        "access-control-expose-headers" : "x-slack-req-id, retry-after",
+        "cache-control" : "private, no-cache, no-store, must-revalidate",
+        "content-encoding" : "gzip",
+        "content-length" : "84",
+        "content-type" : "application\/json; charset=utf-8",
+        "date" : "Tue, 09 Jul 2019 16:27:34 GMT",
+        "expires" : "Mon, 26 Jul 1997 05:00:00 GMT",
+        "nel" : "{\"max_age\":86400,\"report_to\":\"default\",\"include_subdomains\":true,\"success_fraction\":0,\"failure_fraction\":1}",
+        "pragma" : "no-cache",
+        "referrer-policy" : "no-referrer",
+        "report-to" : "{\"max_age\":86400,\"include_subdomains\":true,\"endpoints\":[{\"url\":\"https:\/\/slackb.com\/report-to\"}]}",
+        "server" : "Apache",
+        "status" : "200",
+        "strict-transport-security" : "max-age=31536000; includeSubDomains; preload",
+        "vary" : "Accept-Encoding",
+        "via" : "1.1 a62f7ce6b39c676fcfdde0f9a6fcf08e.cloudfront.net (CloudFront)",
+        "x-accepted-oauth-scopes" : "rtm:stream,client",
+        "x-amz-cf-id" : "ksP_udWDrHYTxKV9JK0uFWvZHRV22dx0tv90URmIb_2--us5PWiyVQ==",
+        "x-amz-cf-pop" : "ARN1-C1",
+        "x-cache" : "Miss from cloudfront",
+        "x-content-type-options" : "nosniff",
+        "x-oauth-scopes" : "identify,read,post,client,apps,admin",
+        "x-slack-req-id" : "3fb836e0-dce4-4494-85b3-91639ffe80f2",
+        "x-via" : "haproxy-www-n3ai",
+        "x-xss-protection" : "0"
+      },
+      "mimeType" : "application\/json",
+      "protocol" : "h2",
+      "remoteIPAddress" : "205.251.219.142",
+      "remotePort" : 443,
+      "requestHeaders" : {
+        ":authority" : "smthwentwrong.slack.com",
+        ":method" : "POST",
+        ":path" : "\/api\/rtm.shouldReload?_x_id=e4bd64d5-1562689653.594&slack_route=TKUC8P1MG&_x_version_ts=1562629140",
+        ":scheme" : "https",
+        "accept" : "*\/*",
+        "accept-encoding" : "gzip, deflate, br",
+        "accept-language" : "ru",
+        "content-length" : "551",
+        "content-type" : "multipart\/form-data; boundary=----WebKitFormBoundaryAJa50dIkjpTRsX9C",
+        "cookie" : "d=zUjshk9cSRuTqnyb6Y22tM%2Bo5ZdfvSZPU1hHSFhzeFROR2RpOGxlc09sM2N3bzY3S0ROVlQ0M0ZDU0JxcjMwaVduWisxa3JYaUJGR2RnYmlaeXd5VEZlQWovaDk4U3B3T2tBZFJzbHkwQjFXd1RTaVdQdVRZa3hOL1AxOGlNazBYZXZ1ZkJzenlvcWtXenpsVFJ6ZEVTN0RLcGJVNVEyVUplY0REeW9rQmc9PcYvECiw%2FuDanxbttfnL5o8%3D; lc=1562592704; b=.jbot28uyilq5vtj6jfl7l3bh; d-s=1562675200",
+        "origin" : "https:\/\/smthwentwrong.slack.com",
+        "sec-metadata" : "destination=\"\", target=subresource, site=same-origin",
+        "user-agent" : "Mozilla\/5.0 (X11; Linux x86_64; Linux Mint 19.1 Tessa tessa; MATE) AppleWebKit\/537.36 (KHTML, like Gecko) AtomShell\/3.4.2 Chrome\/69.0.3497.128 Electron\/4.2.1 Safari\/537.36 Slack_SSB\/3.4.2"
+      },
+      "securityDetails" : {
+        "certificateId" : 0,
+        "certificateTransparencyCompliance" : "unknown",
+        "cipher" : "AES_128_GCM",
+        "issuer" : "DigiCert SHA2 Secure Server CA",
+        "keyExchange" : "ECDHE_RSA",
+        "keyExchangeGroup" : "P-256",
+        "protocol" : "TLS 1.2",
+        "sanList" : [
+          "slack.com",
+          "*.slack.com"
+        ],
+        "signedCertificateTimestampList" : [
+
+        ],
+        "subjectName" : "slack.com",
+        "validFrom" : 1518048000,
+        "validTo" : 1613131200
+      },
+      "securityState" : "secure",
+      "status" : 200,
+      "statusText" : "",
+      "timing" : {
+        "connectEnd" : 268.017,
+        "connectStart" : 169.245,
+        "dnsEnd" : 169.245,
+        "dnsStart" : 0.316,
+        "proxyEnd" : -1,
+        "proxyStart" : -1,
+        "pushEnd" : 0,
+        "pushStart" : 0,
+        "receiveHeadersEnd" : 2539.544,
+        "requestTime" : 67429.01438,
+        "sendEnd" : 268.502,
+        "sendStart" : 268.263,
+        "sslEnd" : 268.007,
+        "sslStart" : 214.108,
+        "workerReady" : -1,
+        "workerStart" : -1
+      },
+      "url" : "https:\/\/smthwentwrong.slack.com\/api\/rtm.shouldReload?_x_id=e4bd64d5-1562689653.594&slack_route=TKUC8P1MG&_x_version_ts=1562629140"
+    },
+    "timestamp" : 67431.554649,
+    "type" : "XHR"
+  }
+} -- JSON
+{
+  "method" : "Network.dataReceived",
+  "params" : {
+    "dataLength" : 65,
+    "encodedDataLength" : 102,
+    "requestId" : "1000016789.129",
+    "timestamp" : 67431.554808
+  }
+} -- JSON
+{
+  "method" : "Network.loadingFinished",
+  "params" : {
+    "encodedDataLength" : 994,
+    "requestId" : "1000016789.129",
+    "shouldReportCorbBlocking" : false,
+    "timestamp" : 67431.554463
+  }
+} -- JSON
+Requset id 1000016789.129
+{
+  "id" : -2147483648,
+  "result" : {
+    "base64Encoded" : false,
+    "body" : "{\"ok\":true,\"should_reload\":false,\"client_min_version\":1562599428}"
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17883}"
+    },
+    "timestamp" : 67432.292786
+  }
+} -- JSON
+{
+  "method" : "Network.requestWillBeSent",
+  "params" : {
+    "documentURL" : "https:\/\/smthwentwrong.slack.com\/messages\/DL5QF4JDN\/",
+    "frameId" : "99560548D6BEE0C8371BDAAF4932FEDA",
+    "hasUserGesture" : false,
+    "initiator" : {
+      "stack" : {
+        "callFrames" : [
+
+        ],
+        "parent" : {
+          "callFrames" : [
+            {
+              "columnNumber" : 5166725,
+              "functionName" : "",
+              "lineNumber" : 0,
+              "scriptId" : "1033",
+              "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+            },
+            {
+              "columnNumber" : 5166428,
+              "functionName" : "",
+              "lineNumber" : 0,
+              "scriptId" : "1033",
+              "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+            },
+            {
+              "columnNumber" : 5166387,
+              "functionName" : "e",
+              "lineNumber" : 0,
+              "scriptId" : "1033",
+              "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+            },
+            {
+              "columnNumber" : 5166226,
+              "functionName" : "",
+              "lineNumber" : 0,
+              "scriptId" : "1033",
+              "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+            }
+          ],
+          "description" : "Image",
+          "parent" : {
+            "callFrames" : [
+              {
+                "columnNumber" : 5166201,
+                "functionName" : "e",
+                "lineNumber" : 0,
+                "scriptId" : "1033",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+              },
+              {
+                "columnNumber" : 5165778,
+                "functionName" : "e",
+                "lineNumber" : 0,
+                "scriptId" : "1033",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+              },
+              {
+                "columnNumber" : 2379294,
+                "functionName" : "e",
+                "lineNumber" : 0,
+                "scriptId" : "1035",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+              },
+              {
+                "columnNumber" : 100071,
+                "functionName" : "e",
+                "lineNumber" : 0,
+                "scriptId" : "1038",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_ts.47b10843d6f006cc8eb4.min.js"
+              },
+              {
+                "columnNumber" : 224003,
+                "functionName" : "execute",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 226425,
+                "functionName" : "dispatch",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 224802,
+                "functionName" : "dispatch",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 969658,
+                "functionName" : "e",
+                "lineNumber" : 0,
+                "scriptId" : "1046",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-client.ff26ea657690dffafb99.min.js"
+              },
+              {
+                "columnNumber" : 73802,
+                "functionName" : "",
+                "lineNumber" : 0,
+                "scriptId" : "1038",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_ts.47b10843d6f006cc8eb4.min.js"
+              },
+              {
+                "columnNumber" : 3913180,
+                "functionName" : "u",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 3884927,
+                "functionName" : "E._settlePromiseFromHandler",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 3885784,
+                "functionName" : "E._settlePromise",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 3886521,
+                "functionName" : "E._settlePromise0",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 3887874,
+                "functionName" : "E._settlePromises",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 3840638,
+                "functionName" : "i._drainQueue",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 3840752,
+                "functionName" : "i._drainQueues",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              },
+              {
+                "columnNumber" : 3838853,
+                "functionName" : "drainQueues",
+                "lineNumber" : 0,
+                "scriptId" : "1030",
+                "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+              }
+            ],
+            "description" : "setInterval",
+            "parent" : {
+              "callFrames" : [
+                {
+                  "columnNumber" : 3901868,
+                  "functionName" : "o",
+                  "lineNumber" : 0,
+                  "scriptId" : "1030",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                },
+                {
+                  "columnNumber" : 3840944,
+                  "functionName" : "i._queueTick",
+                  "lineNumber" : 0,
+                  "scriptId" : "1030",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                },
+                {
+                  "columnNumber" : 3839874,
+                  "functionName" : "u",
+                  "lineNumber" : 0,
+                  "scriptId" : "1030",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                },
+                {
+                  "columnNumber" : 3880777,
+                  "functionName" : "E._then",
+                  "lineNumber" : 0,
+                  "scriptId" : "1030",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                },
+                {
+                  "columnNumber" : 3878552,
+                  "functionName" : "E.then",
+                  "lineNumber" : 0,
+                  "scriptId" : "1030",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                },
+                {
+                  "columnNumber" : 799339,
+                  "functionName" : "",
+                  "lineNumber" : 0,
+                  "scriptId" : "1035",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+                },
+                {
+                  "columnNumber" : 1061500,
+                  "functionName" : "",
+                  "lineNumber" : 0,
+                  "scriptId" : "1033",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+                },
+                {
+                  "columnNumber" : 807185,
+                  "functionName" : "",
+                  "lineNumber" : 0,
+                  "scriptId" : "1035",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+                },
+                {
+                  "columnNumber" : 1061500,
+                  "functionName" : "",
+                  "lineNumber" : 0,
+                  "scriptId" : "1033",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+                },
+                {
+                  "columnNumber" : 1087388,
+                  "functionName" : "",
+                  "lineNumber" : 0,
+                  "scriptId" : "1035",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/application.bc5a0a26a0ed3385b8ec.min.js"
+                },
+                {
+                  "columnNumber" : 1822169,
+                  "functionName" : "",
+                  "lineNumber" : 0,
+                  "scriptId" : "1033",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+                },
+                {
+                  "columnNumber" : 1061500,
+                  "functionName" : "",
+                  "lineNumber" : 0,
+                  "scriptId" : "1033",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/modern.vendor.f3ae672c42639fdf7b61.min.js"
+                },
+                {
+                  "columnNumber" : 98905,
+                  "functionName" : "t",
+                  "lineNumber" : 0,
+                  "scriptId" : "1038",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_ts.47b10843d6f006cc8eb4.min.js"
+                },
+                {
+                  "columnNumber" : 868898,
+                  "functionName" : "t",
+                  "lineNumber" : 0,
+                  "scriptId" : "1042",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-secondary_a_required.a8f08a195d3134b6c1a7.min.js"
+                },
+                {
+                  "columnNumber" : 82117,
+                  "functionName" : "e",
+                  "lineNumber" : 0,
+                  "scriptId" : "1038",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_ts.47b10843d6f006cc8eb4.min.js"
+                },
+                {
+                  "columnNumber" : 30590,
+                  "functionName" : "d",
+                  "lineNumber" : 0,
+                  "scriptId" : "1030",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                },
+                {
+                  "columnNumber" : 30911,
+                  "functionName" : "u",
+                  "lineNumber" : 0,
+                  "scriptId" : "1030",
+                  "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                }
+              ],
+              "description" : "Promise.then",
+              "parent" : {
+                "callFrames" : [
+                  {
+                    "columnNumber" : 31130,
+                    "functionName" : "",
+                    "lineNumber" : 0,
+                    "scriptId" : "1030",
+                    "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                  },
+                  {
+                    "columnNumber" : 28659,
+                    "functionName" : "i",
+                    "lineNumber" : 0,
+                    "scriptId" : "1030",
+                    "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                  },
+                  {
+                    "columnNumber" : 29414,
+                    "functionName" : "fireWith",
+                    "lineNumber" : 0,
+                    "scriptId" : "1030",
+                    "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                  },
+                  {
+                    "columnNumber" : 29449,
+                    "functionName" : "fire",
+                    "lineNumber" : 0,
+                    "scriptId" : "1030",
+                    "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                  },
+                  {
+                    "columnNumber" : 28659,
+                    "functionName" : "i",
+                    "lineNumber" : 0,
+                    "scriptId" : "1030",
+                    "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                  },
+                  {
+                    "columnNumber" : 29414,
+                    "functionName" : "fireWith",
+                    "lineNumber" : 0,
+                    "scriptId" : "1030",
+                    "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                  },
+                  {
+                    "columnNumber" : 32551,
+                    "functionName" : "ready",
+                    "lineNumber" : 0,
+                    "scriptId" : "1030",
+                    "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                  },
+                  {
+                    "columnNumber" : 32684,
+                    "functionName" : "G",
+                    "lineNumber" : 0,
+                    "scriptId" : "1030",
+                    "url" : "https:\/\/a.slack-edge.com\/bv1-6-8cacda2\/rollup-core_required_libs.25e67075492acb75f667.min.js"
+                  }
+                ],
+                "description" : "setTimeout"
+              }
+            }
+          }
+        }
+      },
+      "type" : "script"
+    },
+    "loaderId" : "B4B0D33A279ED9981F745766A008895B",
+    "request" : {
+      "headers" : {
+        "Sec-Metadata" : "destination=image, target=subresource, site=same-site",
+        "User-Agent" : "Mozilla\/5.0 (X11; Linux x86_64; Linux Mint 19.1 Tessa tessa; MATE) AppleWebKit\/537.36 (KHTML, like Gecko) AtomShell\/3.4.2 Chrome\/69.0.3497.128 Electron\/4.2.1 Safari\/537.36 Slack_SSB\/3.4.2"
+      },
+      "initialPriority" : "Low",
+      "method" : "GET",
+      "mixedContentType" : "none",
+      "referrerPolicy" : "no-referrer",
+      "url" : "https:\/\/slack.com\/beacon\/timing?user_id=UL5ALS8SG&team_id=TKUC8P1MG&ver=1562629140&session_age=10734&sub_app_name=legacy&data=mvp_m_check%7Ccount%3A1"
+    },
+    "requestId" : "1000016789.130",
+    "timestamp" : 67440.00175,
+    "type" : "Image",
+    "wallTime" : 1562689664.59091
+  }
+} -- JSON
+{
+  "method" : "Network.responseReceived",
+  "params" : {
+    "frameId" : "99560548D6BEE0C8371BDAAF4932FEDA",
+    "loaderId" : "B4B0D33A279ED9981F745766A008895B",
+    "requestId" : "1000016789.130",
+    "response" : {
+      "connectionId" : 718,
+      "connectionReused" : true,
+      "encodedDataLength" : 353,
+      "fromDiskCache" : false,
+      "fromServiceWorker" : false,
+      "headers" : {
+        "cache-control" : "no-cache, no-store",
+        "content-type" : "image\/gif",
+        "date" : "Tue, 09 Jul 2019 16:27:44 GMT",
+        "referrer-policy" : "no-referrer",
+        "server" : "Apache",
+        "status" : "200",
+        "strict-transport-security" : "max-age=31536000; includeSubDomains; preload",
+        "via" : "1.1 a62f7ce6b39c676fcfdde0f9a6fcf08e.cloudfront.net (CloudFront)",
+        "x-amz-cf-id" : "TDemxtTDhwtZ3IDcbE2Gu1SGSZ6CcmlWfQzaBCd4sCE2RQvWbbYyvA==",
+        "x-amz-cf-pop" : "ARN1-C1",
+        "x-cache" : "Miss from cloudfront",
+        "x-frame-options" : "SAMEORIGIN",
+        "x-via" : "haproxy-www-xrbu"
+      },
+      "mimeType" : "image\/gif",
+      "protocol" : "h2",
+      "remoteIPAddress" : "205.251.219.142",
+      "remotePort" : 443,
+      "requestHeaders" : {
+        ":authority" : "slack.com",
+        ":method" : "GET",
+        ":path" : "\/beacon\/timing?user_id=UL5ALS8SG&team_id=TKUC8P1MG&ver=1562629140&session_age=10734&sub_app_name=legacy&data=mvp_m_check%7Ccount%3A1",
+        ":scheme" : "https",
+        "accept" : "image\/webp,image\/apng,image\/*,*\/*;q=0.8",
+        "accept-encoding" : "gzip, deflate, br",
+        "accept-language" : "ru",
+        "cookie" : "d=zUjshk9cSRuTqnyb6Y22tM%2Bo5ZdfvSZPU1hHSFhzeFROR2RpOGxlc09sM2N3bzY3S0ROVlQ0M0ZDU0JxcjMwaVduWisxa3JYaUJGR2RnYmlaeXd5VEZlQWovaDk4U3B3T2tBZFJzbHkwQjFXd1RTaVdQdVRZa3hOL1AxOGlNazBYZXZ1ZkJzenlvcWtXenpsVFJ6ZEVTN0RLcGJVNVEyVUplY0REeW9rQmc9PcYvECiw%2FuDanxbttfnL5o8%3D; lc=1562592704; b=.jbot28uyilq5vtj6jfl7l3bh; d-s=1562675200",
+        "sec-metadata" : "destination=image, target=subresource, site=same-site",
+        "user-agent" : "Mozilla\/5.0 (X11; Linux x86_64; Linux Mint 19.1 Tessa tessa; MATE) AppleWebKit\/537.36 (KHTML, like Gecko) AtomShell\/3.4.2 Chrome\/69.0.3497.128 Electron\/4.2.1 Safari\/537.36 Slack_SSB\/3.4.2"
+      },
+      "securityDetails" : {
+        "certificateId" : 0,
+        "certificateTransparencyCompliance" : "unknown",
+        "cipher" : "AES_128_GCM",
+        "issuer" : "DigiCert SHA2 Secure Server CA",
+        "keyExchange" : "ECDHE_RSA",
+        "keyExchangeGroup" : "P-256",
+        "protocol" : "TLS 1.2",
+        "sanList" : [
+          "slack.com",
+          "*.slack.com"
+        ],
+        "signedCertificateTimestampList" : [
+
+        ],
+        "subjectName" : "slack.com",
+        "validFrom" : 1518048000,
+        "validTo" : 1613131200
+      },
+      "securityState" : "secure",
+      "status" : 200,
+      "statusText" : "",
+      "timing" : {
+        "connectEnd" : -1,
+        "connectStart" : -1,
+        "dnsEnd" : -1,
+        "dnsStart" : -1,
+        "proxyEnd" : -1,
+        "proxyStart" : -1,
+        "pushEnd" : 0,
+        "pushStart" : 0,
+        "receiveHeadersEnd" : 517.637,
+        "requestTime" : 67440.00212,
+        "sendEnd" : 242.54,
+        "sendStart" : 242.325,
+        "sslEnd" : -1,
+        "sslStart" : -1,
+        "workerReady" : -1,
+        "workerStart" : -1
+      },
+      "url" : "https:\/\/slack.com\/beacon\/timing?user_id=UL5ALS8SG&team_id=TKUC8P1MG&ver=1562629140&session_age=10734&sub_app_name=legacy&data=mvp_m_check%7Ccount%3A1"
+    },
+    "timestamp" : 67440.520586,
+    "type" : "Image"
+  }
+} -- JSON
+{
+  "method" : "Network.dataReceived",
+  "params" : {
+    "dataLength" : 29,
+    "encodedDataLength" : 47,
+    "requestId" : "1000016789.130",
+    "timestamp" : 67440.520734
+  }
+} -- JSON
+{
+  "method" : "Network.loadingFinished",
+  "params" : {
+    "encodedDataLength" : 400,
+    "requestId" : "1000016789.130",
+    "shouldReportCorbBlocking" : false,
+    "timestamp" : 67440.520383
+  }
+} -- JSON
+Requset id 1000016789.130
+{
+  "id" : -2147483648,
+  "result" : {
+    "base64Encoded" : true,
+    "body" : "R0lGODlhAQABAAAAACwAAAAAAQABAAACAkwBADs="
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17884}"
+    },
+    "timestamp" : 67441.000256
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17884}"
+    },
+    "timestamp" : 67441.05412
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17885}"
+    },
+    "timestamp" : 67451.000444
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17885}"
+    },
+    "timestamp" : 67451.039731
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17886}"
+    },
+    "timestamp" : 67452.313103
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17887}"
+    },
+    "timestamp" : 67461.000694
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17887}"
+    },
+    "timestamp" : 67461.038623
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17888}"
+    },
+    "timestamp" : 67471.000455
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17888}"
+    },
+    "timestamp" : 67471.039254
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17889}"
+    },
+    "timestamp" : 67472.331424
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17890}"
+    },
+    "timestamp" : 67481.000316
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17890}"
+    },
+    "timestamp" : 67481.047151
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17891}"
+    },
+    "timestamp" : 67491.000253
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17891}"
+    },
+    "timestamp" : 67491.043007
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17892}"
+    },
+    "timestamp" : 67492.334943
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17893}"
+    },
+    "timestamp" : 67501.000328
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17893}"
+    },
+    "timestamp" : 67501.039023
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17894}"
+    },
+    "timestamp" : 67511.001133
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17894}"
+    },
+    "timestamp" : 67511.102063
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17895}"
+    },
+    "timestamp" : 67512.35756
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17896}"
+    },
+    "timestamp" : 67521.000431
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17896}"
+    },
+    "timestamp" : 67521.039804
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17897}"
+    },
+    "timestamp" : 67531.000307
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17897}"
+    },
+    "timestamp" : 67531.038138
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17898}"
+    },
+    "timestamp" : 67532.37694
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"reconnect_url\",\"url\":\"wss:\/\/wss-primary.slack.com\/?bots_as_apps=1&dp=1&flannel=3&frt=Hf-FAwEBA2ZydAH_hgABAgEBUAEKAAEBUwEKAAAA_gH9_4YB_gHUNf-BAwEBA2ZycAH_ggABBQECUnUBDAABAlRpAQwAAQJFaQEMAAECVWkBDAABAk10Af-EAAAAEP-DBQEBBFRpbWUB_4QAAAD-AYr_ggH-AVx3c3M6Ly9jZXJiZXJ1cy1uOHR0LmxiLnNsYWNrLW1zZ3MuY29tL3dlYnNvY2tldC8tRlp3MHlnaUpWS3c1Y29DVzdENUFxd0VJS3p2bUJIRm5GYmRSTXJXdWRrN20zb0pCNEJoNHpiTVRJNVFXTVZtYTdjVS1OeWtUaHNNc256UE9MLVhKSjVtY2tNTC0tcFJhVmZWZE96R1JOMlNPQTMyb1p6WG9SQ3hvZXRYWXBZNXlVMHoxN2NReVZsSV80ZHN0NDBNXzZHdjJFSDNFMHlFM0F4U3FIYWx2anF2d1ZnUjIydnp1NWxqUUgySm9fZEszcW1fcjY2UXRjcHl3bFBzMERCVzIyQXBFclg4bEttekVYWjV6YXk0VmUtSlM3dzVSbUZmNm52NHFtS0pnOWhDMjlBbGZyWVBtZlQyUzlNclVDclVzeGZESTJHRzhsUWpNeXlKZTZzT1V6az0BCVRLVUM4UDFNRwIJVUw1QUxTOFNHAQ8BAAAADtS2t-EmCmMR_lwAASA0SP6G-D9tRN7JzSY-p56BkVVtgAmHTT2duZntoHQTHAA&token=xoxs-674416783730-685360892900-681210225489-92ea957342a79f83ca67820281c0b1426daa7379cc17b3a4aa1d907a6286f5ad\"}"
+    },
+    "timestamp" : 67537.288724
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17899}"
+    },
+    "timestamp" : 67541.000257
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17899}"
+    },
+    "timestamp" : 67541.039218
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17900}"
+    },
+    "timestamp" : 67551.00044
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17900}"
+    },
+    "timestamp" : 67551.038824
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17901}"
+    },
+    "timestamp" : 67552.379331
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17902}"
+    },
+    "timestamp" : 67561.000411
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17902}"
+    },
+    "timestamp" : 67561.038781
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17903}"
+    },
+    "timestamp" : 67571.000254
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17903}"
+    },
+    "timestamp" : 67571.03925
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17904}"
+    },
+    "timestamp" : 67572.386486
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17905}"
+    },
+    "timestamp" : 67581.000244
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17905}"
+    },
+    "timestamp" : 67581.041057
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17906}"
+    },
+    "timestamp" : 67591.000247
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17906}"
+    },
+    "timestamp" : 67591.038598
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17907}"
+    },
+    "timestamp" : 67592.410012
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17908}"
+    },
+    "timestamp" : 67601.00024
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17908}"
+    },
+    "timestamp" : 67601.038755
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17909}"
+    },
+    "timestamp" : 67611.000277
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17909}"
+    },
+    "timestamp" : 67611.039738
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17910}"
+    },
+    "timestamp" : 67612.413049
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17911}"
+    },
+    "timestamp" : 67621.000416
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17911}"
+    },
+    "timestamp" : 67621.869293
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17912}"
+    },
+    "timestamp" : 67631.000283
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17912}"
+    },
+    "timestamp" : 67631.702537
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17913}"
+    },
+    "timestamp" : 67632.438171
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17914}"
+    },
+    "timestamp" : 67641.000255
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17914}"
+    },
+    "timestamp" : 67641.038464
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17915}"
+    },
+    "timestamp" : 67651.000333
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17915}"
+    },
+    "timestamp" : 67651.038961
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17916}"
+    },
+    "timestamp" : 67652.455472
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"reconnect_url\",\"url\":\"wss:\/\/wss-primary.slack.com\/?bots_as_apps=1&dp=1&flannel=3&frt=Hf-FAwEBA2ZydAH_hgABAgEBUAEKAAEBUwEKAAAA_gH9_4YB_gHUNf-BAwEBA2ZycAH_ggABBQECUnUBDAABAlRpAQwAAQJFaQEMAAECVWkBDAABAk10Af-EAAAAEP-DBQEBBFRpbWUB_4QAAAD-AYr_ggH-AVx3c3M6Ly9jZXJiZXJ1cy1xbXF0LmxiLnNsYWNrLW1zZ3MuY29tL3dlYnNvY2tldC9tRnd2c1poQkVueDdvRmxsY0hqYVZaLVBSTXhYaTNGNGJMWnZ0Zlp4OWw4cVE1Y3VPcndyQUl2cWc0Y2dDSWplVHRQTDB3YUpFNUhQb0hleEVqdkhPMndndFVZb0tSZVoyQ19ISTF4bTgyYUtOaVhESV9PUzktdkVfTnNkeDNDbUZZaHFYMFE3ZzRDQ2FZLXMxZ0VNb000VEFDb0d6dWtTd0ViSTVlWWtsVFlfQjBPTEd4VWpSbmExeVFaWUhOWlNndmprQVEzUzFFMWVKZDhPWWZpZF9YbV9iTnFiaW05Z29BaGhjb3ZMV1pkQ1ZXeUM0UkVIdklPUDIwS1Y0NFZ6bmpfZU5pSVNWWWs3ZDlDVDhIamUtUlFSNkNERE85YmxEejh3am85ZHU5WT0BCVRLVUM4UDFNRwIJVUw1QUxTOFNHAQ8BAAAADtS2uFklWLam_lwAASB3oMbRfJphpBbRcmQ_axd_B1It67fZBmbaXk4n2eQVvgA&token=xoxs-674416783730-685360892900-681210225489-92ea957342a79f83ca67820281c0b1426daa7379cc17b3a4aa1d907a6286f5ad\"}"
+    },
+    "timestamp" : 67657.057938
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17917}"
+    },
+    "timestamp" : 67661.000256
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17917}"
+    },
+    "timestamp" : 67661.039058
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17918}"
+    },
+    "timestamp" : 67671.000208
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17918}"
+    },
+    "timestamp" : 67671.038612
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17919}"
+    },
+    "timestamp" : 67672.458585
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17920}"
+    },
+    "timestamp" : 67681.00028
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17920}"
+    },
+    "timestamp" : 67681.038594
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17921}"
+    },
+    "timestamp" : 67691.000262
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17921}"
+    },
+    "timestamp" : 67691.038381
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17922}"
+    },
+    "timestamp" : 67692.478897
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17923}"
+    },
+    "timestamp" : 67701.000343
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17923}"
+    },
+    "timestamp" : 67701.038541
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17924}"
+    },
+    "timestamp" : 67711.000421
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17924}"
+    },
+    "timestamp" : 67711.039922
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17925}"
+    },
+    "timestamp" : 67712.501589
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17926}"
+    },
+    "timestamp" : 67721.001032
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17926}"
+    },
+    "timestamp" : 67721.041132
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17927}"
+    },
+    "timestamp" : 67731.000313
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17927}"
+    },
+    "timestamp" : 67731.04192
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17928}"
+    },
+    "timestamp" : 67732.504064
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17929}"
+    },
+    "timestamp" : 67741.000248
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17929}"
+    },
+    "timestamp" : 67741.094315
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17930}"
+    },
+    "timestamp" : 67751.000295
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17930}"
+    },
+    "timestamp" : 67751.041005
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17931}"
+    },
+    "timestamp" : 67752.523507
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17932}"
+    },
+    "timestamp" : 67761.000322
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17932}"
+    },
+    "timestamp" : 67761.069743
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17933}"
+    },
+    "timestamp" : 67771.000279
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17933}"
+    },
+    "timestamp" : 67771.041068
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17934}"
+    },
+    "timestamp" : 67772.5444
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"reconnect_url\",\"url\":\"wss:\/\/wss-primary.slack.com\/?bots_as_apps=1&dp=1&flannel=3&frt=Hf-FAwEBA2ZydAH_hgABAgEBUAEKAAEBUwEKAAAA_gH9_4YB_gHUNf-BAwEBA2ZycAH_ggABBQECUnUBDAABAlRpAQwAAQJFaQEMAAECVWkBDAABAk10Af-EAAAAEP-DBQEBBFRpbWUB_4QAAAD-AYr_ggH-AVx3c3M6Ly9jZXJiZXJ1cy12aDdvLmxiLnNsYWNrLW1zZ3MuY29tL3dlYnNvY2tldC9QNmZSMExSMVd0d1JVSUp0T1dpVXNuM192eXVjTktYS0NZZkNYdHhvazJxSWVCOTBfUDJyYnlMMWpfN2JSaVNvYkVqaFZFRXlOV0NmSkRINEJPSG1lQWV3Um9RSjdIUWhHaHVvSVJBVWlWN0ltaVNyekNkSjdEdHJyU29EN3M0dkpSN250X3VoQkY1Y01GZGM3LUJwUVdKZnJSOEZHUGxPQjdCLURlc3g3LW1pRFNKckJ5TGowSVNtLTdnRDZsSUEwRzA5dmtqT01ZY0dSV1YyYnhtdjVYbml2SmVzYkZ5eWEzYldtZGhCZE10b1hYT0NiMHNNTHg5UW5fUUw2M0tZTlhrWm96S3dLaDRLbXU2cFNvTnF6Nm1NWTlxS3Qtdk1WNXo5QWJ0QURqdz0BCVRLVUM4UDFNRwIJVUw1QUxTOFNHAQ8BAAAADtS2uNElKZt8_lwAASCuZ0dQHxnDuXIKJ_mQ7Wzm4F_HMFcMKuw5ytHftS6r1QA&token=xoxs-674416783730-685360892900-681210225489-92ea957342a79f83ca67820281c0b1426daa7379cc17b3a4aa1d907a6286f5ad\"}"
+    },
+    "timestamp" : 67777.858613
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17935}"
+    },
+    "timestamp" : 67781.000407
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17935}"
+    },
+    "timestamp" : 67781.038646
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17936}"
+    },
+    "timestamp" : 67791.000445
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17936}"
+    },
+    "timestamp" : 67791.039473
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17937}"
+    },
+    "timestamp" : 67792.550454
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17938}"
+    },
+    "timestamp" : 67801.000509
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17938}"
+    },
+    "timestamp" : 67801.043131
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17939}"
+    },
+    "timestamp" : 67811.000308
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17939}"
+    },
+    "timestamp" : 67811.038276
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17940}"
+    },
+    "timestamp" : 67812.570183
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17941}"
+    },
+    "timestamp" : 67821.000437
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17941}"
+    },
+    "timestamp" : 67821.038851
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17942}"
+    },
+    "timestamp" : 67831.000264
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17942}"
+    },
+    "timestamp" : 67831.038874
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17943}"
+    },
+    "timestamp" : 67832.592244
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17944}"
+    },
+    "timestamp" : 67841.000269
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17944}"
+    },
+    "timestamp" : 67841.039279
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17945}"
+    },
+    "timestamp" : 67851.000364
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17945}"
+    },
+    "timestamp" : 67851.038715
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17946}"
+    },
+    "timestamp" : 67852.596425
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17947}"
+    },
+    "timestamp" : 67861.000251
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17947}"
+    },
+    "timestamp" : 67861.038427
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17948}"
+    },
+    "timestamp" : 67871.000491
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17948}"
+    },
+    "timestamp" : 67871.045257
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17949}"
+    },
+    "timestamp" : 67872.61898
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17950}"
+    },
+    "timestamp" : 67881.000244
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17950}"
+    },
+    "timestamp" : 67881.038806
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"ping\",\"id\":17951}"
+    },
+    "timestamp" : 67891.000292
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"pong\",\"reply_to\":17951}"
+    },
+    "timestamp" : 67891.050762
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameSent",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : true,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"tickle\",\"id\":17952}"
+    },
+    "timestamp" : 67892.621402
+  }
+} -- JSON
+{
+  "method" : "Network.webSocketFrameReceived",
+  "params" : {
+    "requestId" : "1000016789.67",
+    "response" : {
+      "mask" : false,
+      "opcode" : 1,
+      "payloadData" : "{\"type\":\"reconnect_url\",\"url\":\"wss:\/\/wss-primary.slack.com\/?bots_as_apps=1&dp=1&flannel=3&frt=Hf-FAwEBA2ZydAH_hgABAgEBUAEKAAEBUwEKAAAA_gH9_4YB_gHUNf-BAwEBA2ZycAH_ggABBQECUnUBDAABAlRpAQwAAQJFaQEMAAECVWkBDAABAk10Af-EAAAAEP-DBQEBBFRpbWUB_4QAAAD-AYr_ggH-AVx3c3M6Ly9jZXJiZXJ1cy1vbWN6LmxiLnNsYWNrLW1zZ3MuY29tL3dlYnNvY2tldC9NRjc3d0RhdkM3Qlk5b2p3YVY0WUNXdVBpQmRScVN3QkFLYk4zazFQdDdLNXRrbnQ1MEdycFI2OUN5NDBOeFpRRzhvOS15aHE2aVBZdjZqbHNEMnJlVml5eGltOUFNVFdBRF9adkVrb3U5MG45c3pBU2Z0M25kU0ZuRVU2TmhPQXRsX09oRXFEN001Q0hKNXE2cFRNeTBfYzRhTUJGaHFGNUI5ckh1Zm1PLUIzSVFNUk9uY1lBamdZcDRJOG5RNHNqNTczYk9vaGxZWS1LcG9SejVKUUMyNkZ2UjJ6dmowa3JFZ2ZYNjVzaVljV1JsSl85Rnh2T0pYOFRoWGlXU2lhcWNvc1lUY0VFen
