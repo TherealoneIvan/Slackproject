@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/keyliaran/simpleSocket/simple.cpp
+Poco/Net/HTTPRequest.h
+/home/keyliaran/simpleSocket/Poco/Net/HTTPRequest.h
+Poco/Net/HTTPResponse.h
+/home/keyliaran/simpleSocket/Poco/Net/HTTPResponse.h
+Poco/Net/HTTPMessage.h
+/home/keyliaran/simpleSocket/Poco/Net/HTTPMessage.h
+Poco/Net/WebSocket.h
+/home/keyliaran/simpleSocket/Poco/Net/WebSocket.h
+Poco/Net/HTTPClientSession.h
+/home/keyliaran/simpleSocket/Poco/Net/HTTPClientSession.h
+Poco/URI.h
+/home/keyliaran/simpleSocket/Poco/URI.h
+Poco/StreamCopier.h
+/home/keyliaran/simpleSocket/Poco/StreamCopier.h
+Poco/JSON/Parser.h
+/home/keyliaran/simpleSocket/Poco/JSON/Parser.h
+Poco/JSON/Object.h
+/home/keyliaran/simpleSocket/Poco/JSON/Object.h
+Poco/JSON/Array.h
+/home/keyliaran/simpleSocket/Poco/JSON/Array.h
+iostream
+-
+fstream
+-
+string
+-
+unordered_map
+-
+
