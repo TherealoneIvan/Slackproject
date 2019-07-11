@@ -1,3 +1,0 @@
-/home/keyliaran/simpleSocket/build/CMakeFiles/rebuild_cache.dir
-/home/keyliaran/simpleSocket/build/CMakeFiles/simple_socket.dir
-/home/keyliaran/simpleSocket/build/CMakeFiles/edit_cache.dir
