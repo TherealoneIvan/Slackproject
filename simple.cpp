@@ -37,44 +37,34 @@ typedef struct tmessage {
 } message;
 
 int main(int args,char **argv) {
+    //Если нужен вывод в файл
     /*
     std::ofstream out("out.txt");
     std::streambuf *coutbuf = std::cout.rdbuf();
     std::cout.rdbuf(out.rdbuf());
     */
+
     URI uri("http://localhost:9222/json");
     std::string path(uri.getPathAndQuery());
 
     HTTPClientSession session(uri.getHost(), uri.getPort());
     HTTPRequest request(HTTPRequest::HTTP_GET, path, HTTPMessage::HTTP_1_1);
     HTTPResponse response;
-    // writeLog(MessageType::Debug, "Send request");
 
     session.sendRequest(request);
     std::unordered_map<std::string, message> sendedMsg;
-    // writeLog(MessageType::Debug, "Recieve response");
     std::istream &rs = session.receiveResponse(response);
     std::string s(std::istreambuf_iterator<char>(rs), {});
-    //   writeLog(MessageType::Debug, "Response result0 %s",  s);
     std::string currentUserName;
+
     if (response.getStatus() != Poco::Net::HTTPResponse::HTTP_UNAUTHORIZED) {
         Parser parser;
-
         Var result = parser.parse(s);
-        //writeLog(MessageType::Debug, "Init parser");
-
         Array::Ptr arr = result.extract<Array::Ptr>();
         Object::Ptr object = arr->getObject(1);
-        // writeLog(MessageType::Debug, "getObject0");
-        // writeLog(MessageType::Debug, "Response result %s",  result.toString());
-
         std::string webSocketUrl = object->get("webSocketDebuggerUrl").toString();
-
-        // writeLog(MessageType::General,"Websocket URL: %s",webSocketUrl);
-
         std::cout << "Websocket URL: " << webSocketUrl << "\n";
         URI wsURI(webSocketUrl);
-
         std::cout << wsURI.getPath() << " PATH\n";
 
         HTTPResponse response1;
@@ -86,11 +76,10 @@ int main(int args,char **argv) {
 
         socket->sendFrame(enableNetwork, strlen(enableNetwork), WebSocket::FRAME_TEXT);
 
-        //std::cout << "Len " << len << "\n";
         constexpr int bufSize = 131072;
-
         std::string receiveBuff(bufSize, '\0');
         Poco::Buffer<char> buffer(bufSize);
+
         for (;;) {
             int flags = 0;
             buffer.resize(0);
@@ -99,6 +88,8 @@ int main(int args,char **argv) {
             std::string json(buffer.begin(), buffer.end());
             Var result = parser.parse(json);
             Object::Ptr object = result.extract<Object::Ptr>();
+            //Определяем то, что сообщение кто-то отправил
+            //TODO эта часть должна отвечать за сообщения в лс
             if (object->has("id") && object->getValue<int>("id") == INT_MIN && object->has("result")) {
                 auto resultMsg = object->getObject("result");
                 std::string jsonBody = resultMsg->getValue<std::string>("body");
@@ -112,11 +103,38 @@ int main(int args,char **argv) {
                         std::string user = message->getValue<std::string>("user");
                         std::cout << "Message is sent \n" << "user :" << user << "\n";
                         std::cout << "channel : " << channel << "\n";
-                        std::cout << "text : " << text << "\n";
+                        std::cout << "text : " << text << "\n" << "Message was sent" << "\n";
                     }
                 }
             }
-
+            //Определяем то, что сообщение было отправлено в канал
+            //TODO эта часть должна отвечать за паблик чаты
+            if (object->has("method")) {
+                if (object->getValue<std::string>("method") == "Network.webSocketFrameReceived") {
+                    if (object->has("params")) {
+                        auto params = object->getObject("params");
+                        auto timestamp = params->getValue<std::string>("timestamp");
+                        if (params->has("response")) {
+                            auto response = params->getObject("response");
+                            if (response->has("payloadData")) {
+                                Var payloadResult = parser.parse(response->getValue<std::string>("payloadData"));
+                                auto payloadData = payloadResult.extract<Object::Ptr>();
+                                if (payloadData->has("channel")&&payloadData->has("client_msg_id")) {
+                                    auto message = payloadData->getValue<std::string>("text");
+                                    auto channel = payloadData->getValue<std::string>("channel");
+                                    auto user = payloadData->getValue<std::string>("user");
+                                    std::cout << "message is sent to public chat" << "\n";
+                                    std::cout<<"message "+message<<std::endl;
+                                    std::cout<<"user "+user<<std::endl;
+                                    std::cout<<"channel "+channel<<std::endl;
+                                    std::cout<<"timestamp "+timestamp<<std::endl;
+                                    std::cout << "message was sent to public chat" << "\n";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             if (object->has("params")) {
                 auto params = object->getObject("params");
                 if (object->getValue<std::string>("method") == "Network.loadingFinished") {
