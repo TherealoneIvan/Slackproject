@@ -11,9 +11,10 @@
 #include "Poco/JSON/Object.h"
 #include "Poco/JSON/Array.h"
 
+#include "slack.h"
+
 #include <iostream>
 #include <fstream>
-#include <string>
 
 #include <unordered_map>
 
@@ -36,7 +37,7 @@ typedef struct tmessage {
     std::string to;
 } message;
 
-int main(int args,char **argv) {
+void SlackInterceptor::listenAndCatch() {
     //Если нужен вывод в файл
     /*
     std::ofstream out("out.txt");
@@ -44,7 +45,7 @@ int main(int args,char **argv) {
     std::cout.rdbuf(out.rdbuf());
     */
 
-    URI uri("http://localhost:9222/json");
+    URI uri(socket);
     std::string path(uri.getPathAndQuery());
 
     HTTPClientSession session(uri.getHost(), uri.getPort());
@@ -89,7 +90,6 @@ int main(int args,char **argv) {
             Var result = parser.parse(json);
             Object::Ptr object = result.extract<Object::Ptr>();
             //Определяем то, что сообщение кто-то отправил
-            //TODO эта часть должна отвечать за сообщения в лс
             if (object->has("id") && object->getValue<int>("id") == INT_MIN && object->has("result")) {
                 auto resultMsg = object->getObject("result");
                 std::string jsonBody = resultMsg->getValue<std::string>("body");
@@ -104,34 +104,6 @@ int main(int args,char **argv) {
                         std::cout << "Message is sent \n" << "user :" << user << "\n";
                         std::cout << "channel : " << channel << "\n";
                         std::cout << "text : " << text << "\n" << "Message was sent" << "\n";
-                    }
-                }
-            }
-            //Определяем то, что сообщение было отправлено в канал
-            //TODO эта часть должна отвечать за паблик чаты
-            if (object->has("method")) {
-                if (object->getValue<std::string>("method") == "Network.webSocketFrameReceived") {
-                    if (object->has("params")) {
-                        auto params = object->getObject("params");
-                        auto timestamp = params->getValue<std::string>("timestamp");
-                        if (params->has("response")) {
-                            auto response = params->getObject("response");
-                            if (response->has("payloadData")) {
-                                Var payloadResult = parser.parse(response->getValue<std::string>("payloadData"));
-                                auto payloadData = payloadResult.extract<Object::Ptr>();
-                                if (payloadData->has("channel")&&payloadData->has("client_msg_id")) {
-                                    auto message = payloadData->getValue<std::string>("text");
-                                    auto channel = payloadData->getValue<std::string>("channel");
-                                    auto user = payloadData->getValue<std::string>("user");
-                                    std::cout << "message is sent to public chat" << "\n";
-                                    std::cout<<"message "+message<<std::endl;
-                                    std::cout<<"user "+user<<std::endl;
-                                    std::cout<<"channel "+channel<<std::endl;
-                                    std::cout<<"timestamp "+timestamp<<std::endl;
-                                    std::cout << "message was sent to public chat" << "\n";
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -150,4 +122,8 @@ int main(int args,char **argv) {
             }
         }
     }
+}
+
+void SlackInterceptor::setSocket (std::string str) {
+    socket = str;
 }
