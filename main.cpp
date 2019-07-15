@@ -1,8 +1,8 @@
 #include "slack.h"
 #include <iostream>
 
-int main() {
+int main(int argc, char ** argv) {
     SlackInterceptor si;
-    si.setSocket("http://localhost:9222/json");
+    si.setSocket(argv[1]);
     si.listenAndCatch();
 }
