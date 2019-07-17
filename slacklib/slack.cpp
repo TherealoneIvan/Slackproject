@@ -3,12 +3,9 @@
 #include "Poco/Net/HTTPMessage.h"
 #include "Poco/Net/WebSocket.h"
 #include "Poco/Net/HTTPClientSession.h"
-#include "Poco/URI.h"
 #include "Poco/StreamCopier.h"
 
 
-#include "Poco/JSON/Parser.h"
-#include "Poco/JSON/Object.h"
 #include "Poco/JSON/Array.h"
 
 #include "slack.h"
@@ -32,8 +29,9 @@ using Poco::Dynamic::Var;
 using Poco::JSON::Array;
 using Poco::JSON::Object;
 
-void SlackInterceptor::fillInfo(std::string & name, std::string & addresse, std::string & body, std::string & timestamp,
-                                bool wasSentBySessionOwner) {
+void SlackInterceptor::fillInfo(std::string & workplace, std::string & name, std::string & addresse, std::string & body,
+                                std::string & timestamp, bool wasSentBySessionOwner) {
+    info.workplaceName = workplace;
     info.user = name;
     info.to = addresse;
     info.text = body;
@@ -43,14 +41,17 @@ void SlackInterceptor::fillInfo(std::string & name, std::string & addresse, std:
 
 void SlackInterceptor::printInfo() {
     std::cout << "Message was sent:\n";
+    std::cout << "Workplace : " << info.workplaceName << "\n";
     std::cout << "User : " << info.user << "\n";
     std::cout << "To : " << info.to << "\n";
     std::cout << "Text : " << info.text << "\n";
     std::cout << "Time : " << info.time << "\n";
+
+    //TODO
     std::cout << (info.isSender ? "Was sent by user" : "Was accepted by user") << "\n";
 }
 
-void SlackInterceptor::listenAndCatch() {
+void SlackInterceptor::createListeners() {
     //If output in file is needed
     /*
     std::ofstream out("out.txt");
@@ -72,79 +73,89 @@ void SlackInterceptor::listenAndCatch() {
     std::string currentUserName;
 
     if (response.getStatus() != Poco::Net::HTTPResponse::HTTP_UNAUTHORIZED) {
-        Parser parser;
         Var result = parser.parse(s);
         Array::Ptr arr = result.extract<Array::Ptr>();
         //Object::Ptr object;
-        Object::Ptr object = arr->getObject(0);
-        if (object->get("title").toString() == "index.jade") {
-            object = arr->getObject(1);
+        for (size_t i = 0; i < arr->size(); ++i) {
+            Object::Ptr object = arr->getObject(i);
+            if (object->get("title").toString() != "index.jade")
+                listeners.emplace_back(&SlackInterceptor::listenAndCatch, this, object, uri, i);
+            //std::thread thr(&SlackInterceptor::listenAndCatch, this, object, uri);
         }
-        std::string webSocketUrl = object->get("webSocketDebuggerUrl").toString();
-        std::cout << "Websocket URL: " << webSocketUrl << "\n";
-        URI wsURI(webSocketUrl);
-        std::cout << wsURI.getPath() << " PATH\n";
+        for (size_t i = 0; i < arr->size(); ++i) {
+            listeners[i].join();
+        }
+    }
+}
 
-        HTTPResponse response1;
-        HTTPRequest request1(HTTPRequest::HTTP_GET, wsURI.getPath(), HTTPMessage::HTTP_1_1);
-        HTTPClientSession session1(uri.getHost(), uri.getPort());
-        WebSocket *socket = new WebSocket(session1, request1, response1);
+void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI uri, int index) {
+    std::string workplace = object->get("title").toString();
+    std::string webSocketUrl = object->get("webSocketDebuggerUrl").toString();
+    std::cout << "Websocket URL: " << webSocketUrl << "\n";
+    URI wsURI(webSocketUrl);
+    std::cout << wsURI.getPath() << " PATH\n";
 
-        char const *enableNetwork = "{\"id\": 1, \"method\": \"Network.enable\"}";
+    HTTPResponse response1;
+    HTTPRequest request1(HTTPRequest::HTTP_GET, wsURI.getPath(), HTTPMessage::HTTP_1_1);
+    HTTPClientSession session1(uri.getHost(), uri.getPort());
+    WebSocket *socket = new WebSocket(session1, request1, response1);
 
-        socket->sendFrame(enableNetwork, strlen(enableNetwork), WebSocket::FRAME_TEXT);
+    char const *enableNetwork = "{\"id\": 1, \"method\": \"Network.enable\"}";
 
-        constexpr int bufSize = 131072;
-        std::string receiveBuff(bufSize, '\0');
-        Poco::Buffer<char> buffer(bufSize);
+    socket->sendFrame(enableNetwork, strlen(enableNetwork), WebSocket::FRAME_TEXT);
 
-        for (;;) {
-            int flags = 0;
-            buffer.resize(0);
-            int rlen = socket->receiveFrame(buffer, flags);
+    constexpr int bufSize = 131072;
+    std::string receiveBuff(bufSize, '\0');
+    Poco::Buffer<char> buffer(bufSize);
 
-            std::string json(buffer.begin(), buffer.end());
-            Var result = parser.parse(json);
-            Object::Ptr object = result.extract<Object::Ptr>();
-            //Catch needed message and gather info
-            if (object->has("method")) {
-                if (object->getValue<std::string>("method") == "Network.webSocketFrameReceived") {
-                    if (object->has("params")) {
-                        auto params = object->getObject("params");
-                        auto timestamp = params->getValue<std::string>("timestamp");
-                        if (params->has("response")) {
-                            auto response = params->getObject("response");
-                            if (response->has("payloadData")) {
-                                Var payloadResult = parser.parse(response->getValue<std::string>("payloadData"));
-                                auto payloadData = payloadResult.extract<Object::Ptr>();
-                                if (payloadData->has("channel")&&payloadData->has("client_msg_id")) {
-                                    auto message = payloadData->getValue<std::string>("text");
-                                    auto channel = payloadData->getValue<std::string>("channel");
-                                    auto user = payloadData->getValue<std::string>("user");
-                                    fillInfo(user, channel, message, timestamp, true);
-                                    printInfo();
-                                }
+    for (;;) {
+        int flags = 0;
+        buffer.resize(0);
+        int rlen = socket->receiveFrame(buffer, flags);
+
+        std::string json(buffer.begin(), buffer.end());
+        Var result = parser.parse(json);
+        Object::Ptr object = result.extract<Object::Ptr>();
+        //std::cout << result.toString() << "-------JSON \n";
+        //Catch needed message and gather info
+        if (object->has("method")) {
+            if (object->getValue<std::string>("method") == "Network.webSocketFrameReceived") {
+                if (object->has("params")) {
+                    auto params = object->getObject("params");
+                    auto timestamp = params->getValue<std::string>("timestamp");
+                    if (params->has("response")) {
+                        auto response = params->getObject("response");
+                        if (response->has("payloadData")) {
+                            Var payloadResult = parser.parse(response->getValue<std::string>("payloadData"));
+                            auto payloadData = payloadResult.extract<Object::Ptr>();
+                            if (payloadData->has("channel") && payloadData->has("client_msg_id")) {
+                                auto message = payloadData->getValue<std::string>("text");
+                                auto channel = payloadData->getValue<std::string>("channel");
+                                auto user = payloadData->getValue<std::string>("user");
+                                fillInfo(workplace, user, channel, message, timestamp, true);
+                                printInfo();
                             }
                         }
                     }
                 }
-                if (object->getValue<std::string>("method") == "Network.loadingFinished") {
-                    //Вызов метода для получения тела респонса
-                    if (object->has("params")) {
-                        auto params = object->getObject("params");
-                        auto requestId = params->getValue<std::string>("requestId");
-                        //std::cout << "Requset id " << requestId << "\n";
-                        int f = std::stof(requestId) * 1000;
-                        std::string sendResponse = std::string("{\"id\":" + std::to_string(f) +
-                                                               ", \"method\": \"Network.getResponseBody\", \"params\": {\"requestId\" : \"") +
-                                                   requestId + std::string("\"} }");
-                        socket->sendFrame(sendResponse.c_str(), sendResponse.size(), WebSocket::FRAME_TEXT);
-                    }
+            }
+            if (object->getValue<std::string>("method") == "Network.loadingFinished") {
+                //Вызов метода для получения тела респонса
+                if (object->has("params")) {
+                    auto params = object->getObject("params");
+                    auto requestId = params->getValue<std::string>("requestId");
+                    //std::cout << "Requset id " << requestId << "\n";
+                    int f = std::stof(requestId) * 1000;
+                    std::string sendResponse = std::string("{\"id\":" + std::to_string(f) +
+                                                           ", \"method\": \"Network.getResponseBody\", \"params\": {\"requestId\" : \"") +
+                                               requestId + std::string("\"} }");
+                    socket->sendFrame(sendResponse.c_str(), sendResponse.size(), WebSocket::FRAME_TEXT);
                 }
             }
         }
     }
 }
+
 
 void SlackInterceptor::setSocket (std::string str) {
     socket = str;

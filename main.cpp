@@ -3,6 +3,6 @@
 
 int main(int argc, char ** argv) {
     SlackInterceptor si;
-    si.setSocket(argv[1]);
-    si.listenAndCatch();
+    si.setSocket("https://localhost:9222/json");
+    si.createListeners();
 }
