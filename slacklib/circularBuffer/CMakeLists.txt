@@ -1,3 +1,3 @@
 cmake_minimum_required(VERSION 2.7)
 
-add_library(circularBuffer circularBuffer.cpp circularBuffer.h)
+add_library(circularBuffer circularBuffer.h circularBuffer.cpp)

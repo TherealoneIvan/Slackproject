@@ -97,9 +97,6 @@ void SlackInterceptor::createListeners() {
                 }
             //std::thread thr(&SlackInterceptor::listenAndCatch, this, object, uri);
         }
-        for (size_t i = 0; i < arr->size(); ++i) {
-            listeners[i].join();
-        }
         try {
             std::thread reader(&SlackInterceptor::storageService, this);
             reader.join();
@@ -107,13 +104,18 @@ void SlackInterceptor::createListeners() {
         catch (...) {
             std::cout << "Can't create new threads" << std::endl;
         }
+        for (size_t i = 0; i < arr->size(); ++i) {
+            listeners[i].join();
+        }
+
     }
 }
 
 void SlackInterceptor::storageService() {
     while(true) {
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
-        printInfo();
+        if (!storage.empty())
+            printInfo();
     }
 }
 

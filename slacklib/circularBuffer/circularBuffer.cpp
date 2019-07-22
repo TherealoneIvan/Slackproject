@@ -1,4 +1,4 @@
-#include "circularBuffer.h"
+/*#include "circularBuffer.h"
 
 //#include <mutex>
 //#include <cstdio>
@@ -83,4 +83,4 @@ T circular_buffer<T>::get()
     tail_ = (tail_ + 1) % max_size_;
 
     return val;
-}
+}*/
