@@ -11,9 +11,15 @@ set(poco_libs
         ${CMAKE_SOURCE_DIR}/slacklib/extern/poco/lib/libPocoFoundation.a
         )
 
+include_directories(${CMAKE_SOURCE_DIR}/slacklib/circularBuffer)
+
+add_subdirectory(${CMAKE_SOURCE_DIR}/slacklib/circularBuffer)
+
 add_library(slacklibrary slack.cpp slack.h)
 
 target_link_libraries(slacklibrary ${poco_libs} pthread)
+
+target_link_libraries(slacklibrary PUBLIC circularBuffer)
 
 target_include_directories(slacklibrary PUBLIC
 ${CMAKE_SOURCE_DIR}/slacklib/extern/poco/Foundation/include/

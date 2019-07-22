@@ -5,6 +5,7 @@
 #include "Poco/Net/HTTPClientSession.h"
 #include "Poco/StreamCopier.h"
 
+#include "circularBuffer/circularBuffer.h"
 
 #include "Poco/JSON/Array.h"
 
@@ -12,6 +13,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <chrono>
 
 #include <unordered_map>
 
@@ -31,15 +33,18 @@ using Poco::JSON::Object;
 
 void SlackInterceptor::fillInfo(std::string & workplace, std::string & name, std::string & addresse, std::string & body,
                                 std::string & timestamp, bool wasSentBySessionOwner) {
+    message info;
     info.workplaceName = workplace;
     info.user = name;
     info.to = addresse;
     info.text = body;
     info.time = timestamp;
     info.isSender = true;
+    storage.circular_buffer::put(info);
 }
 
 void SlackInterceptor::printInfo() {
+    message info = storage.get();
     std::cout << "Message was sent:\n";
     std::cout << "Workplace : " << info.workplaceName << "\n";
     std::cout << "User : " << info.user << "\n";
@@ -66,7 +71,12 @@ void SlackInterceptor::createListeners() {
     HTTPRequest request(HTTPRequest::HTTP_GET, path, HTTPMessage::HTTP_1_1);
     HTTPResponse response;
 
-    session.sendRequest(request);
+    try {
+        session.sendRequest(request);
+    }
+    catch (...) {
+        std::cout << "Can't send a request" << std::endl;
+    }
     //std::unordered_map<std::string, message> sendedMsg;
     std::istream &rs = session.receiveResponse(response);
     std::string s(std::istreambuf_iterator<char>(rs), {});
@@ -79,12 +89,31 @@ void SlackInterceptor::createListeners() {
         for (size_t i = 0; i < arr->size(); ++i) {
             Object::Ptr object = arr->getObject(i);
             if (object->get("title").toString() != "index.jade")
-                listeners.emplace_back(&SlackInterceptor::listenAndCatch, this, object, uri, i);
+                try {
+                    listeners.emplace_back(&SlackInterceptor::listenAndCatch, this, object, uri, i);
+                }
+                catch (...) {
+                    std::cout << "Can't create new threads" << std::endl;
+                }
             //std::thread thr(&SlackInterceptor::listenAndCatch, this, object, uri);
         }
         for (size_t i = 0; i < arr->size(); ++i) {
             listeners[i].join();
         }
+        try {
+            std::thread reader(&SlackInterceptor::storageService, this);
+            reader.join();
+        }
+        catch (...) {
+            std::cout << "Can't create new threads" << std::endl;
+        }
+    }
+}
+
+void SlackInterceptor::storageService() {
+    while(true) {
+        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+        printInfo();
     }
 }
 
@@ -101,9 +130,12 @@ void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI 
     WebSocket *socket = new WebSocket(session1, request1, response1);
 
     char const *enableNetwork = "{\"id\": 1, \"method\": \"Network.enable\"}";
-
-    socket->sendFrame(enableNetwork, strlen(enableNetwork), WebSocket::FRAME_TEXT);
-
+    try {
+        socket->sendFrame(enableNetwork, strlen(enableNetwork), WebSocket::FRAME_TEXT);
+    }
+    catch (...){
+        std::cout << "Can't send frame" << std::endl;
+    }
     constexpr int bufSize = 131072;
     std::string receiveBuff(bufSize, '\0');
     Poco::Buffer<char> buffer(bufSize);
@@ -111,8 +143,12 @@ void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI 
     for (;;) {
         int flags = 0;
         buffer.resize(0);
-        int rlen = socket->receiveFrame(buffer, flags);
-
+        try {
+            int rlen = socket->receiveFrame(buffer, flags);
+        }
+        catch (...) {
+            std::cout << "Can't receive frame" << std::endl;
+        }
         std::string json(buffer.begin(), buffer.end());
         Var result = parser.parse(json);
         Object::Ptr object = result.extract<Object::Ptr>();
@@ -133,7 +169,7 @@ void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI 
                                 auto channel = payloadData->getValue<std::string>("channel");
                                 auto user = payloadData->getValue<std::string>("user");
                                 fillInfo(workplace, user, channel, message, timestamp, true);
-                                printInfo();
+                                //printInfo();
                             }
                         }
                     }
