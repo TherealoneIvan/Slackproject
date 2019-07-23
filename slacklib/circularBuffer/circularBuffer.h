@@ -9,8 +9,8 @@ template <class T>
 class circular_buffer {
  public:
     explicit circular_buffer() :
-            buf_(std::unique_ptr<T[]>(new T[20])),
-            max_size_(20)
+            buf_(std::unique_ptr<T[]>(new T[5])),
+            max_size_(5)
     {}
     void put(T item);
     T get();

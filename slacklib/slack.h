@@ -23,17 +23,17 @@ typedef struct tmessage {
 class SlackInterceptor {
  public:
     SlackInterceptor() {
-        socket  = "https:/localhost:0001/json";
+        address  = "https:/localhost:0001/json";
     }
     void createListeners();
     void listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI uri, int index);
     void printInfo();
-    void setSocket(std::string str);
+    void setAddress(std::string str);
     void fillInfo(std::string & workplace, std::string & name, std::string & addresse, std::string & body,
                     std::string & timestamp, bool wasSentBySessionOwner);
     void storageService();
  private:
-    std::string socket;
+    std::string address;
     std::vector<std::thread> listeners;
     circular_buffer<message> storage;
     Poco::JSON::Parser parser;
