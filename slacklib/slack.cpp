@@ -124,7 +124,7 @@ void SlackInterceptor::createListeners() {
 }
 
 void SlackInterceptor::storageService() {
-    while(true) {
+    while(!stopRequested) {
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
         if (!storage.empty())
             printInfo();
@@ -162,7 +162,7 @@ void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI 
             std::string receiveBuff(bufSize, '\0');
             Poco::Buffer<char> buffer(bufSize);
 
-            for (;;) {
+            while (!stopRequested) {
                 int flags = 0;
                 buffer.resize(0);
                 try {
@@ -231,4 +231,14 @@ void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI 
 
 void SlackInterceptor::setAddress (std::string str) {
     address = std::move(str);
+}
+
+void SlackInterceptor::stop () {
+    stopRequested = true;
+}
+
+void SlackInterceptor::start() {
+    stopRequested = false;
+    createListeners();
+
 }
