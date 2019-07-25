@@ -18,6 +18,8 @@ typedef struct tmessage {
     std::string text;
     std::string time;
     bool isSender;
+    bool hasFile;
+    std::string fileName;
 } message;
 
 class SlackInterceptor {
@@ -30,7 +32,8 @@ class SlackInterceptor {
     void printInfo();
     void setAddress(std::string str);
     void fillInfo(std::string & workplace, std::string & name, std::string & addresse, std::string & body,
-                    std::string & timestamp, bool wasSentBySessionOwner);
+                    std::string & timestamp, bool wasSentBySessionOwner, std::string & title,
+                    bool fileWasSent);
     void storageService();
  private:
     std::string address;

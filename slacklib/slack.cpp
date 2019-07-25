@@ -33,7 +33,7 @@ using Poco::JSON::Array;
 using Poco::JSON::Object;
 
 void SlackInterceptor::fillInfo(std::string & workplace, std::string & name, std::string & addresse, std::string & body,
-                                std::string & timestamp, bool wasSentBySessionOwner) {
+                                std::string & timestamp, bool wasSentBySessionOwner, std::string & title, bool fileWasSent) {
     message info;
     info.workplaceName = workplace;
     info.user = name;
@@ -41,18 +41,23 @@ void SlackInterceptor::fillInfo(std::string & workplace, std::string & name, std
     info.text = body;
     info.time = timestamp;
     info.isSender = true;
-    storage.circular_buffer::put(info);
+    info.hasFile = fileWasSent;
+    if (fileWasSent) {
+        info.fileName = title;
+    }
+    storage.put(info);
 }
 
 void SlackInterceptor::printInfo() {
     message info = storage.get();
-    std::this_thread::sleep_for(std::chrono::milliseconds(2000));
+    //std::this_thread::sleep_for(std::chrono::milliseconds(2000));
     std::cout << "Message was sent:\n";
     std::cout << "Workplace : " << info.workplaceName << "\n";
     std::cout << "User : " << info.user << "\n";
     std::cout << "To : " << info.to << "\n";
     std::cout << "Text : " << info.text << "\n";
     std::cout << "Time : " << info.time << "\n";
+    std::cout << (info.hasFile ? "File is attached : " + info.fileName : "No files are attached") << "\n";
 
     //TODO
     std::cout << (info.isSender ? "Was sent by user" : "Was accepted by user") << "\n";
@@ -140,7 +145,6 @@ void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI 
     while (!isConnected) {
         try {
             //WebSocket *socket = new WebSocket(session1, request1, response1);
-            //isConnected = true;
             std::unique_ptr <WebSocket> socket = std::make_unique<WebSocket>(session1, request1, response1);
             isConnected = true;
             /*}
@@ -170,6 +174,7 @@ void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI 
                 std::string json(buffer.begin(), buffer.end());
                 Var result = parser.parse(json);
                 Object::Ptr object = result.extract<Object::Ptr>();
+                bool fileWasSent = false;
                 //std::cout << result.toString() << "-------JSON \n";
                 //Catch needed message and gather info
                 if (object->has("method")) {
@@ -184,9 +189,17 @@ void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI 
                                     auto payloadData = payloadResult.extract<Object::Ptr>();
                                     if (payloadData->has("channel") && payloadData->has("client_msg_id")) {
                                         auto message = payloadData->getValue<std::string>("text");
+                                        std::string title = "";
+                                        if (payloadData->has("files")) {
+                                            auto fileData = parser.parse(payloadData->getValue<std::string>("files"));
+                                            Array::Ptr fileInfo = fileData.extract<Array::Ptr>();
+                                            Object::Ptr fileAttrs = fileInfo->getObject(0);
+                                            title = fileAttrs->getValue<std::string>("title");
+                                            fileWasSent = true;
+                                        }
                                         auto channel = payloadData->getValue<std::string>("channel");
                                         auto user = payloadData->getValue<std::string>("user");
-                                        fillInfo(workplace, user, channel, message, timestamp, true);
+                                        fillInfo(workplace, user, channel, message, timestamp, true, title, fileWasSent);
                                         //printInfo();
                                     }
                                 }
@@ -200,9 +213,9 @@ void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI 
                             auto requestId = params->getValue<std::string>("requestId");
                             //std::cout << "Requset id " << requestId << "\n";
                             int f = std::stof(requestId) * 1000;
-                            std::string sendResponse = std::string("{\"id\":" + std::to_string(f) +
-                                                                   ", \"method\": \"Network.getResponseBody\", \"params\": {\"requestId\" : \"") +
-                                                       requestId + std::string("\"} }");
+                            std::string sendResponse = "{\"id\":" + std::to_string(f) +
+                                                                   ", \"method\": \"Network.getResponseBody\", \"params\": {\"requestId\" : \"" +
+                                                       requestId + "\"} }";
                             socket->sendFrame(sendResponse.c_str(), sendResponse.size(), WebSocket::FRAME_TEXT);
                         }
                     }
@@ -211,12 +224,11 @@ void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI 
         }
         catch (std::exception &e) {
             std::cout << e.what() << std::endl;
-            std::cout << "Trying to connect ..." << std::endl;
         }
     }
 }
 
 
 void SlackInterceptor::setAddress (std::string str) {
-    address = str;
+    address = std::move(str);
 }
