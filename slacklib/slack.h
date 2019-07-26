@@ -27,6 +27,10 @@ class SlackInterceptor {
     SlackInterceptor() {
         address  = "https:/localhost:0001/json";
         stopRequested = false;
+        previousWasStart = false;
+    }
+    ~SlackInterceptor() {
+        stop();
     }
     void createListeners();
     void listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI uri, int index);
@@ -41,8 +45,10 @@ class SlackInterceptor {
  private:
     std::string address;
     std::vector<std::thread> listeners;
+    std::vector<std::thread> readerVec;
     circular_buffer<message> storage;
     Poco::JSON::Parser parser;
     bool stopRequested;
+    bool previousWasStart;
 };
 #endif //NSOKET_SIMPLE_H

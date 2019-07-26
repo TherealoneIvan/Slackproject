@@ -106,15 +106,15 @@ void SlackInterceptor::createListeners() {
                 //std::thread thr(&SlackInterceptor::listenAndCatch, this, object, uri);
             }
             try {
-                std::thread reader(&SlackInterceptor::storageService, this);
-                reader.join();
+                readerVec.emplace_back(&SlackInterceptor::storageService, this);
+                //reader.join();
             }
             catch (std::exception &e) {
                 std::cout << e.what() << std::endl;
             }
-            for (size_t i = 0; i < arr->size(); ++i) {
+            /*for (size_t i = 0; i < arr->size(); ++i) {
                 listeners[i].join();
-            }
+            }*/
 
         }
     }
@@ -234,11 +234,27 @@ void SlackInterceptor::setAddress (std::string str) {
 }
 
 void SlackInterceptor::stop () {
-    stopRequested = true;
+    if (previousWasStart) {
+        stopRequested = true;
+        for (size_t i = 0; i < listeners.size(); ++i) {
+            listeners[i].join();
+        }
+        try {
+            readerVec[0].join();
+        }
+        catch (std::exception &e) {
+            std::cout << e.what() << std::endl;
+        }
+    } else {
+        std::cout << "Previous call was stop() \n";
+    }
 }
 
 void SlackInterceptor::start() {
-    stopRequested = false;
-    createListeners();
-
+    if (!previousWasStart) {
+        stopRequested = false;
+        createListeners();
+    } else {
+        std::cout << "Previous call was start() \n";
+    }
 }
