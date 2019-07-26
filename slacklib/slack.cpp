@@ -82,8 +82,8 @@ void SlackInterceptor::createListeners() {
         try {
             session.sendRequest(request);
         }
-        catch (...) {
-            std::cout << "Can't send a request" << std::endl;
+        catch (std::exception & e) {
+            std::cerr << e.what() << std::endl;
         }
         //std::unordered_map<std::string, message> sendedMsg;
         std::istream &rs = session.receiveResponse(response);
@@ -101,7 +101,7 @@ void SlackInterceptor::createListeners() {
                         listeners.emplace_back(&SlackInterceptor::listenAndCatch, this, object, uri, i);
                     }
                     catch (std::exception &e) {
-                        std::cout << e.what() << std::endl;
+                        std::cerr << e.what() << std::endl;
                     }
                 //std::thread thr(&SlackInterceptor::listenAndCatch, this, object, uri);
             }
@@ -110,7 +110,7 @@ void SlackInterceptor::createListeners() {
                 //reader.join();
             }
             catch (std::exception &e) {
-                std::cout << e.what() << std::endl;
+                std::cerr << e.what() << std::endl;
             }
             /*for (size_t i = 0; i < arr->size(); ++i) {
                 listeners[i].join();
@@ -119,7 +119,7 @@ void SlackInterceptor::createListeners() {
         }
     }
     catch (std::exception &e) {
-        std::cout << e.what() << std::endl;
+        std::cerr << e.what() << std::endl;
     }
 }
 
@@ -156,7 +156,7 @@ void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI 
                 socket->sendFrame(enableNetwork, strlen(enableNetwork), WebSocket::FRAME_TEXT);
             }
             catch (std::exception &e) {
-                std::cout << e.what() << std::endl;
+                std::cerr << e.what() << std::endl;
             }
             constexpr int bufSize = 131072;
             std::string receiveBuff(bufSize, '\0');
@@ -169,7 +169,7 @@ void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI 
                     int rlen = socket->receiveFrame(buffer, flags);
                 }
                 catch (std::exception &e) {
-                    std::cout << e.what() << std::endl;
+                    std::cerr << e.what() << std::endl;
                 }
                 std::string json(buffer.begin(), buffer.end());
                 Var result = parser.parse(json);
@@ -223,7 +223,7 @@ void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI 
             }
         }
         catch (std::exception &e) {
-            std::cout << e.what() << std::endl;
+            std::cerr << e.what() << std::endl;
         }
     }
 }
@@ -243,10 +243,10 @@ void SlackInterceptor::stop () {
             readerVec[0].join();
         }
         catch (std::exception &e) {
-            std::cout << e.what() << std::endl;
+            std::cerr << e.what() << std::endl;
         }
     } else {
-        std::cout << "Previous call was stop() \n";
+        std::cerr << "Previous call was stop() \n";
     }
 }
 
@@ -255,6 +255,6 @@ void SlackInterceptor::start() {
         stopRequested = false;
         createListeners();
     } else {
-        std::cout << "Previous call was start() \n";
+        std::cerr << "Previous call was start() \n";
     }
 }
