@@ -58,9 +58,10 @@ void SlackInterceptor::printInfo() {
     std::cout << "Text : " << info.text << "\n";
     std::cout << "Time : " << info.time << "\n";
     std::cout << (info.hasFile ? "File is attached : " + info.fileName : "No files are attached") << "\n";
-
+    /*
     //TODO
     std::cout << (info.isSender ? "Was sent by user" : "Was accepted by user") << "\n";
+    */
 }
 
 void SlackInterceptor::createListeners() {
@@ -85,7 +86,6 @@ void SlackInterceptor::createListeners() {
         catch (std::exception & e) {
             std::cerr << e.what() << std::endl;
         }
-        //std::unordered_map<std::string, message> sendedMsg;
         std::istream &rs = session.receiveResponse(response);
         std::string s(std::istreambuf_iterator<char>(rs), {});
         std::string currentUserName;
@@ -93,7 +93,6 @@ void SlackInterceptor::createListeners() {
         if (response.getStatus() != Poco::Net::HTTPResponse::HTTP_UNAUTHORIZED) {
             Var result = parser.parse(s);
             Array::Ptr arr = result.extract<Array::Ptr>();
-            //Object::Ptr object;
             for (size_t i = 0; i < arr->size(); ++i) {
                 Object::Ptr object = arr->getObject(i);
                 if (object->get("title").toString() != "index.jade")
@@ -103,19 +102,13 @@ void SlackInterceptor::createListeners() {
                     catch (std::exception &e) {
                         std::cerr << e.what() << std::endl;
                     }
-                //std::thread thr(&SlackInterceptor::listenAndCatch, this, object, uri);
             }
             try {
                 readerVec.emplace_back(&SlackInterceptor::storageService, this);
-                //reader.join();
             }
             catch (std::exception &e) {
                 std::cerr << e.what() << std::endl;
             }
-            /*for (size_t i = 0; i < arr->size(); ++i) {
-                listeners[i].join();
-            }*/
-
         }
     }
     catch (std::exception &e) {
@@ -144,13 +137,8 @@ void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI 
     bool isConnected = false;
     while (!isConnected) {
         try {
-            //WebSocket *socket = new WebSocket(session1, request1, response1);
             std::unique_ptr <WebSocket> socket = std::make_unique<WebSocket>(session1, request1, response1);
             isConnected = true;
-            /*}
-            catch (std::exception & e) {
-                std::cout << e.what() << std::endl;
-            }*/
             char const *enableNetwork = "{\"id\": 1, \"method\": \"Network.enable\"}";
             try {
                 socket->sendFrame(enableNetwork, strlen(enableNetwork), WebSocket::FRAME_TEXT);
@@ -207,11 +195,10 @@ void SlackInterceptor::listenAndCatch(Poco::JSON::Object::Ptr object, Poco::URI 
                         }
                     }
                     if (object->getValue<std::string>("method") == "Network.loadingFinished") {
-                        //Вызов метода для получения тела респонса
+                        //Call a method for getting response's body
                         if (object->has("params")) {
                             auto params = object->getObject("params");
                             auto requestId = params->getValue<std::string>("requestId");
-                            //std::cout << "Requset id " << requestId << "\n";
                             int f = std::stof(requestId) * 1000;
                             std::string sendResponse = "{\"id\":" + std::to_string(f) +
                                                                    ", \"method\": \"Network.getResponseBody\", \"params\": {\"requestId\" : \"" +
